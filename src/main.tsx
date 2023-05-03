@@ -69,10 +69,10 @@ a {
 `;
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <RecoilRoot>
-      <GlobalStyle />
-      <App />
-    </RecoilRoot>
-  </React.StrictMode>
+    <React.StrictMode>
+        <RecoilRoot>
+            <GlobalStyle />
+            <App />
+        </RecoilRoot>
+    </React.StrictMode>
 );
