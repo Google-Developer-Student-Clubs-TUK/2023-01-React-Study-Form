@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { RecoilRoot } from 'recoil'
-import { createGlobalStyle } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { RecoilRoot } from 'recoil';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -68,12 +68,11 @@ a {
 }
 `;
 
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <RecoilRoot>
       <GlobalStyle />
       <App />
     </RecoilRoot>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
