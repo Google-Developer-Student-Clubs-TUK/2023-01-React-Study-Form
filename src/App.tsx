@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Header from './component/Header';
 
 const Wrapper = styled.div`
     display: flex;
@@ -13,9 +14,11 @@ const Wrapper = styled.div`
 
 function App() {
     return (
-        <Wrapper>
-            hi
-        </Wrapper>
+        <>
+            <Wrapper>
+                <Header/>
+            </Wrapper>
+        </>
     )
 }
 
