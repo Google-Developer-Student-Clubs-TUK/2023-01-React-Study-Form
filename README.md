@@ -14,6 +14,13 @@
 
 ## 기술 스택
 
+1. react.js
+2. Typescript
+3. Drag and Drop
+4. react-hook-form
+5. styled-component
+6. recoil
+
 ## 폴더 구조
 
 ## 프로젝트 진행 방식
