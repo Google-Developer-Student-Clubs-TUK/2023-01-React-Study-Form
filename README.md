@@ -19,6 +19,7 @@
 3. Drag and Drop
 4. react-hook-form
 5. styled-component
+6. recoil
 
 ## 폴더 구조
 
