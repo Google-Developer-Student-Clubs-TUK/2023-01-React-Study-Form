@@ -1,0 +1,11 @@
+# modules
+node_modules
+
+## eslint
+.eslintrc.js
+
+# vite config
+vite.config.ts
+
+# tailwind config
+tailwind.config.js
