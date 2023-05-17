@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const MainPage = () => {
     return (
         <>
-            <Wrapper>hi</Wrapper>
+            <Wrapper></Wrapper>
         </>
     );
 };
