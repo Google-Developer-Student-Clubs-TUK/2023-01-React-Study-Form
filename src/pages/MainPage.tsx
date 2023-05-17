@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TechForm } from '../component';
 
 const Wrapper = styled.div`
     margin-left: auto;
@@ -14,7 +15,9 @@ const Wrapper = styled.div`
 const MainPage = () => {
     return (
         <>
-            <Wrapper></Wrapper>
+            <Wrapper>
+                <TechForm></TechForm>
+            </Wrapper>
         </>
     );
 };
