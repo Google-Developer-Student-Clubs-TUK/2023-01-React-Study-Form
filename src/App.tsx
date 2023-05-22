@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Header from './component/Header';
 import React from 'react';
+import MainPage from './pages/MainPage';
 
 const Wrapper = styled.div`
     display: flex;
@@ -15,6 +16,7 @@ function App() {
         <>
             <Wrapper>
                 <Header />
+                <MainPage />
             </Wrapper>
         </>
     );
