@@ -13,7 +13,6 @@ const Label = styled.label`
     font-size: 1.25rem;
     line-height: 1.75rem;
     display: inline-block;
-    cursor: pointer;
 `;
 
 const Input = styled.input`
@@ -31,11 +30,26 @@ const Text = styled.span`
 `;
 
 const Radio = ({ id, name, value, text }: RadioProps) => {
-    const [check, setChecked] = useState('C');
+    const [check, setChecked] = useState('');
+    const handleClickRadioButton = (radioBtnName: string) => {
+        if (check === radioBtnName) {
+            setChecked(''); // 이미 선택된 버튼을 다시 클릭하면 선택 해제
+        } else {
+            setChecked(radioBtnName); // 다른 버튼을 클릭하면 해당 버튼 선택
+        }
+        console.log(check);
+    };
 
     return (
         <Label htmlFor={id}>
-            <Input type="radio" id={id} name={name} value={value} />
+            <Input
+                type="radio"
+                id={id}
+                name={name}
+                value={value}
+                checked={check === value}
+                onChange={() => handleClickRadioButton(value)}
+            />
             <Text>{text}</Text>
         </Label>
     );

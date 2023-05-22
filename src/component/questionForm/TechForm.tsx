@@ -32,25 +32,38 @@ const TechForm = () => {
         <>
             <Container>
                 <Question>
-                    <Title>사용가능한 언어를 선택해주세요.</Title>
+                    <Title>해당하는 학년을 선택해주세요</Title>
                     <Wrapper>
-                        <Radio id="c_language" name="language" value="c" text="C" />
-                        <Radio
+                        <Radio id="grade_1" name="grade" value="1" text="1" />
+                        <Radio id="grade_2" name="grade" value="2" text="2" />
+                        <Radio id="grade_3" name="grade" value="3" text="3" />
+                        <Radio id="grade_4" name="grade" value="4" text="4" />
+                    </Wrapper>
+                </Question>
+                <Question>
+                    <Title>스터디 희망분야</Title>
+                    <Wrapper>
+                        <CheckBox id="react_language" name="subject" value="react" text="react" />
+                        <CheckBox
                             id="flutter_language"
-                            name="language"
+                            name="subject"
                             value="flutter"
                             text="flutter"
                         />
-                        <Radio id="python_language" name="language" value="python" text="Python" />
-                        <Radio
+                        <CheckBox
+                            id="python_language"
+                            name="subject"
+                            value="python"
+                            text="Python"
+                        />
+                        <CheckBox
                             id="javascript_language"
-                            name="language"
+                            name="subject"
                             value="javascript"
                             text="Javascript"
                         />
-                        <Radio id="react_language" name="language" value="react" text="react" />
-                        <Radio id="php_language" name="language" value="php" text="PHP" />
-                        <Radio id="java_language" name="language" value="java" text="Java" />
+                        <CheckBox id="php_language" name="subject" value="php" text="PHP" />
+                        <CheckBox id="java_language" name="subject" value="java" text="Java" />
                     </Wrapper>
                 </Question>
             </Container>
