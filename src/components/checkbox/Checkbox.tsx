@@ -1,17 +1,17 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
-type RadioProps = {
+type CheckboxProps = {
   id: string;
   name: string;
   value: string;
   text: string;
 };
 
-const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
-  ({ id, name, value, text }: RadioProps, ref) => (
+const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+  ({ id, name, value, text }, ref) => (
     <Label htmlFor={id}>
-      <Input type='radio' id={id} name={name} value={value} ref={ref} />
+      <Input type='checkbox' id={id} name={name} value={value} ref={ref} />
       <Text>{text}</Text>
     </Label>
   ),
@@ -22,19 +22,16 @@ const Label = styled.label({
 });
 
 const Input = styled.input`
-  ${tw`mr-2 cursor-pointer`}
+  ${tw`mr-2 cursor-pointer `}
 
-  &[type=radio] {
+  &[type=checkbox] {
     vertical-align: middle;
-    appearance: none;
-    border: max(2px, 0.1em) solid gray;
-    border-radius: 50%;
     width: 1.25em;
     height: 1.25em;
   }
 
-  &[type='radio']:checked {
-    ${tw`border-[0.4em] border-blue-600`}
+  &[type='checkbox']:checked {
+    ${tw`border-blue-600`}
   }
 `;
 
@@ -42,4 +39,4 @@ const Text = styled.span({
   verticalAlign: 'middle',
 });
 
-export default Radio;
+export default Checkbox;

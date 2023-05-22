@@ -8,6 +8,6 @@ const App = () => (
   </Container>
 );
 
-const Container = tw.div`w-full min-h-screen max-w-[820px] mx-auto border-8 border-gray-300 p-10`;
+const Container = tw.div`w-full min-h-screen max-w-[820px] mx-auto p-10`;
 
 export default App;

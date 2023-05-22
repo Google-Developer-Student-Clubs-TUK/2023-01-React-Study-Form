@@ -55,5 +55,6 @@ module.exports = {
     'no-nested-ternary': 'off',
     'react/no-array-index-key': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
   }
 };
