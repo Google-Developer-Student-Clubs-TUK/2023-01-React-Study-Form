@@ -1,7 +1,8 @@
-import { MainPage } from "@/Pages"
+import React from 'react'
+import { MainPage } from '@/Pages'
 
-function App() {
- return <MainPage/>
+function App (): JSX.Element {
+  return <MainPage/>
 }
 
 export default App

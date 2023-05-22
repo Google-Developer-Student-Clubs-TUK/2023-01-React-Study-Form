@@ -1,21 +1,18 @@
-import { BlueCap, Title, Panel, RadioMenu} from "@/Components"
+import React from 'react'
 
-import styles from './MainPage.module.css';
+import { JsonForm } from '@/Components'
 
-function MainPage() {
-    return (
-        <div className={styles.root}> 
-            <div className={styles.contentmenu}>
-                <Panel cap={{height: 10}}>
-                    <Title title="GDSC 한국공학대학교 멤버 모집" />
-                </Panel>
-                <Panel cap={{height: 48, text:"개인 정보 관련 질문"}}>
-                    <RadioMenu summary="개인정보 수집 동의 (GDSC 멤버 모집 안내에 사용 후 파기됩니다)" items={["예", "아니오"]}/>
-                </Panel>
-            </div>
-        </div>
-    )
-   }
-   
+import styles from './MainPage.module.css'
+import { getMockJsonData } from '@/Api'
+
+function MainPage (): JSX.Element {
+  return (
+    <div className={styles.root}>
+      <JsonForm json={getMockJsonData()} onSubmit={data => { console.log(data) }}/>
+      <div className='tinyinfo' style={{ textAlign: 'center', margin: '16px 0px' }}>이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.</div>
+      <div className='tinyinfo' style={{ textAlign: 'center', margin: '16px 0px', fontSize: '24px' }}>설문지</div>
+    </div>
+  )
+}
+
 export default MainPage
-   

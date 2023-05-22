@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.root > * {
+    padding: 10px 0;
+    align-items: center;
+}
+
+.input {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    font-size: 16px;
+    flex-grow: 1;
+}
+.input:focus {
+    outline: none;
+}
+.inputcase {
+    display: flex;
+}

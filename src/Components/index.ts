@@ -1,6 +1,11 @@
-export {default as Title} from './Title';
 
-export {default as BlueCap} from './BlueCap';
-export {default as Panel} from './Panel';
-
-export {default as RadioMenu} from './RadioMenu/RadioMenu';
+export { Title } from './Title'
+export { BlueCap } from './BlueCap'
+export { Panel } from './Panel'
+export { RadioMenu } from './RadioMenu'
+export { InputField } from './InputField'
+export { FormPage } from './FormPage'
+export { NavButton } from './NavButton'
+export { Label } from './Label'
+export { CheckBox } from './CheckBox'
+export { JsonForm } from './JsonForm'
