@@ -8,14 +8,6 @@
 ## 개요
 - 리액트를 활용하여 [GDSC TUK 멤버 모집 지원서 폼](https://www.figma.com/file/fzDiVHk1QKTMSEyH6goL9G/GDSC-TUK-Form?node-id=0%3A1&t=Gl1GbiApGS4v4kP1-1)을 만듭니다.
 
-## 실행 방법
-
-## URL
-
-## 기술 스택
-
-## 폴더 구조
-
 ## 프로젝트 진행 방식
 
 - 해당 레포지토리를 자신의 레포지토리로 fork 받은 후, 구현을 진행합니다.
@@ -25,6 +17,14 @@
 - 정기 회의 전까지 구현한 프로젝트를 github-pages, vercel 등을 활용하여 배포하도록 합니다.
 - 리드미의 실행 방법, URL, 기술 스택, 폴더 구조 항목에 대해서는 정기 회의 전 각자 작성하도록 합니다.
   - 이외에 리드미에 추가하고 싶은 항목이 있다면 자유롭게 추가하시면 됩니다.
+
+## 구현 결과물
+|이름|배포 링크|레포지토리 링크|
+|---|-------|-----------|
+|김경지|[URL](https://2023-01-react-study-form.vercel.app/)|[URL](https://github.com/jqkk/2023-01-React-Study-Form)|
+|용준현|[URL](https://formify-pione3r.vercel.app)|[URL](https://github.com/pione3r/formify)|
+|김광혁|[URL](https://2023-01-react-study-form-eta.vercel.app/)|[URL](https://github.com/hyuckkim/2023-01-React-Study-Form)|
+|정준영||[URL](https://github.com/Google-Developer-Student-Clubs-TUK/2023-01-React-Study-Form/tree/Jayjunyoung)|
 
 ## 참고 링크
 - https://www.figma.com/file/fzDiVHk1QKTMSEyH6goL9G/GDSC-TUK-Form?node-id=0%3A1&t=Gl1GbiApGS4v4kP1-1
